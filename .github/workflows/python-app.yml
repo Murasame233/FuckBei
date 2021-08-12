@@ -9,7 +9,7 @@ on:
     - cron: '0 4 * * *'
 
 jobs:
-  build:
+  run:
 
     runs-on: ubuntu-latest
 
