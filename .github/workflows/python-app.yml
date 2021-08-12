@@ -22,13 +22,13 @@ jobs:
     - name: Install dependencies
       run: |
         pip install -r requirements.txt
-    - name: Write Env File
+    - name: Write .env file
       run: |
         pip install -r requirements.txt
         echo "USERNAME=${{secrets.USERNAME}}" >> ".env"
         echo "PASSWORD=${{secrets.PASSWORD}}" >> ".env"
         echo "LOCATION=${{secrets.LOCATION}}" >> ".env"
         echo "COORDINATES=${{secrets.COORDINATES}}" >> ".env"
-    - name: Test with pytest
+    - name: Run
       run: |
         python main.py
